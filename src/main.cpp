@@ -1002,20 +1002,20 @@ int64 GetProofOfWorkReward( int nHeight, uint256 prevHash)
         {
            nSubsidy = 2000000 * COIN;
 	}
-	 else if (nHeight < 230000)
-	{
-           nSubsidy = 50 * COIN;
-        }
-        else if (nHeight < 4000000)
-	{
-           nSubsidy = 15 * COIN;
-        }
-        else if (nHeight < 6000000)
-	{
-           nSubsidy = 10 * COIN;
-        }
-        else if (nHeight < 30000000)
-	{
+ 	 else if (nHeight < 240000)
+ 	{
+            nSubsidy = 50 * COIN;
+         }
+         else if (nHeight < 4000000)
+ 	{
+            nSubsidy = 15 * COIN;
+         }
+         else if (nHeight < 6000000)
+ 	{
+            nSubsidy = 10 * COIN;
+         }
+         else if (nHeight < 30000000)
+ 	{
            nSubsidy = 1 * COIN;
         }
         return nSubsidy;
